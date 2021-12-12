@@ -9,9 +9,9 @@
 
 In Google Colab:
 ```bash
-$ git clone https://github.com/ROB-535-F21-Team-3/Perception-Project.git
-$ cd yolov5
-$ pip install -r requirements.txt  # install
+$ !git clone https://github.com/ROB-535-F21-Team-3/Perception-Project.git
+$ %cd yolov5
+$ !pip install -r requirements.txt  # install
 
 import utils
 display = utils.notebook_init()  # checks

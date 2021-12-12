@@ -21,7 +21,7 @@ display = utils.notebook_init()  # checks
 <details open>
 <summary>Inference</summary>
 
-Download the pretrained weights here: https://drive.google.com/drive/folders/10fIrxCLVVog3bJXJTbGBZFIC1V0jrAad?usp=sharing
+Download the pretrained weights here: https://drive.google.com/file/d/11-bxZUZ2b6z5Td0Dn444dbl0croKFiNj/view?usp=sharing
 
 In Google Colab terminal:
 ```bash

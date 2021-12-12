@@ -1,3 +1,36 @@
+Instruction for this forked repository (ROB-535):
+<details open>
+<summary>Install</summary>
+
+[**Python>=3.6.0**](https://www.python.org/) is required with all
+[requirements.txt](https://github.com/ultralytics/yolov5/blob/master/requirements.txt) installed including
+[**PyTorch>=1.7**](https://pytorch.org/get-started/locally/):
+<!-- $ sudo apt update && apt install -y libgl1-mesa-glx libsm6 libxext6 libxrender-dev -->
+
+In Google Colab:
+```bash
+$ git clone https://github.com/ROB-535-F21-Team-3/Perception-Project.git
+$ cd yolov5
+$ pip install -r requirements.txt  # install
+
+import utils
+display = utils.notebook_init()  # checks
+```
+</details>
+
+<details open>
+<summary>Inference</summary>
+
+Download the pretrained weights here: https://drive.google.com/drive/folders/10fIrxCLVVog3bJXJTbGBZFIC1V0jrAad?usp=sharing
+
+In Google Colab terminal:
+```bash
+$ for f in $(ls -1 /content/drive/Shareddrives/rob535/test) ;do python detect.py --weights /content/drive/MyDrive/yolov5/runs/train/exp3/weights/last.pt --img 1920 --max-det 1 --nosave --save-txt --conf-thres 0.20 --source "/content/drive/Shareddrives/rob535/test/"$f; done
+```
+</details>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 <div align="center">
 <p>
    <a align="left" href="https://ultralytics.com/yolov5" target="_blank">

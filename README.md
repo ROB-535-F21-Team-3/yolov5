@@ -9,9 +9,9 @@
 
 In Google Colab:
 ```bash
-$ !git clone https://github.com/ROB-535-F21-Team-3/yolov5.git
-$ %cd yolov5
-$ !pip install -r requirements.txt  # install
+!git clone https://github.com/ROB-535-F21-Team-3/yolov5.git
+%cd yolov5
+!pip install -r requirements.txt  # install
 
 import utils
 display = utils.notebook_init()  # checks
@@ -25,7 +25,7 @@ Download the pretrained weights here: https://drive.google.com/drive/folders/10f
 
 In Google Colab terminal:
 ```bash
-$ for f in $(ls -1 /content/drive/Shareddrives/rob535/test) ;do python detect.py --weights /path/to/last.pt --img 1920 --max-det 1 --nosave --save-txt --conf-thres 0.20 --source "/path/to/test/"$f; done
+for f in $(ls -1 /content/drive/Shareddrives/rob535/test) ;do python detect.py --weights /path/to/last.pt --img 1920 --max-det 1 --nosave --save-txt --conf-thres 0.20 --source "/path/to/test/"$f; done
 ```
 </details>
 

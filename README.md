@@ -9,7 +9,7 @@
 
 In Google Colab:
 ```bash
-$ !git clone https://github.com/ROB-535-F21-Team-3/Perception-Project.git
+$ !git clone https://github.com/ROB-535-F21-Team-3/yolov5.git
 $ %cd yolov5
 $ !pip install -r requirements.txt  # install
 

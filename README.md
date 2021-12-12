@@ -25,7 +25,7 @@ Download the pretrained weights here: https://drive.google.com/file/d/11-bxZUZ2b
 
 In Google Colab terminal:
 ```bash
-for f in $(ls -1 /content/drive/Shareddrives/rob535/test) ;do python detect.py --weights /path/to/last.pt --img 1920 --max-det 1 --nosave --save-txt --conf-thres 0.20 --source "/path/to/test/"$f; done
+for f in $(ls -1 /path/to/test) ;do python detect.py --weights /path/to/last.pt --img 1920 --max-det 1 --nosave --save-txt --conf-thres 0.20 --source "/path/to/test/"$f; done
 ```
 </details>
 
